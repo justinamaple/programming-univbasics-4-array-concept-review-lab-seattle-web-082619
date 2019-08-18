@@ -9,7 +9,7 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  max = 999999
+  max = 0
   array.each do |integer|
     max = integer > max ? integer : max
   end
@@ -18,7 +18,7 @@ def find_max_value(array)
 end
 
 def find_min_value(array)
-  min = 0
+  min = 999999
   array.each do |integer|
     min = integer < min ? integer : min
   end
